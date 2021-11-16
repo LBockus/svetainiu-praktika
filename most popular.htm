@@ -16,7 +16,8 @@
         header {
             background-color: lightgray;
             width: 100%;
-            padding: 5px 20px;
+            padding: 5px 15px;
+            display: inline-block;
         }
         header h1 {
             color: red;
@@ -25,24 +26,171 @@
         }
         a {
             text-decoration: none;
+            font-size: 20px;
+            color: rgb(0, 177, 236);
+        }
+        header > div {
+            display: inline-block;
+        }
+        .nav {
+            float: right;
+            margin-top: 50px;
+        }
+        .nav-link {
+             padding: 5px 30px;
+             border-radius: 10px;      
+        }
+        .now {
+            background-color: red;
+            color: white;
+        }
+        .article {
+            display: inline-block;
+            width: 100%;
+            border-bottom: 3px solid darkgray;
+        }
+        .propit {
+            float: left;
+            width: 100px;
+            margin: 30px 30px 50px 30px;
+            color: white;
+        }
+        .prop-up {
+            border: 1px solid black;
+            background-color: red;
+            text-align: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .prop-middle {
+            border: 1px solid black;
+            color: red;
+            font-size: 60px;
+            font-weight: bolder;
+            text-align: center;
+        }
+        .prop-middle p {margin: 20px 0px;}
+        .prop-down {
+            background-color: rgb(85, 85, 85);
+            text-align: center;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .article-main {
+            width: 91%;
+            border-left: 2px solid gray;
+            margin: 30px 0px;
+            padding: 0px 20px;
+            vertical-align: top;
+            float: right;
+        }
+        .article-main h2 {
+            margin: 0px;
+            font-size: 35px;
+        }
+        .article-main p {
+            margin: 5px;
+            font-size: 20px;
+        }
+        .under-headline{
+            margin: 0px;
             font-size: 15px;
+            color: gray;
+        }
+        .under-headline a {
+            font-size: 15px;
+        }
+        .article-footer {
+            margin: 0px;
+            color: gray;
+        }
+        .article-footer-border {
+            border-left: 3px solid darkgray;
+            padding-left: 5px;                       
         }
     </style>
 </head>
 <body>
     <header>
-         <h1><img src="./img/logo.png">Most Popular Stories</h1>
-         <a href="explanation.htm"> Whats this?</a>
-
+        <div>
+            <h1><img src="./img/logo.png">Most Popular Stories</h1>
+            <a href="explanation.htm"> Whats this?</a>
+        </div>
+        <div class="nav">
+            <a href="now.htm" class="nav-link now">NOW</a>
+            <a href="today.htm" class="nav-link">TODAY</a>
+            <a href="week.htm" class="nav-link">THIS WEEK</a>
+        </div>
     </header>
-    <nav>
-
-    </nav>
     <main>
-
+        <div class="article">
+            <div class="propit">
+                <div class="prop-up">PROP IT &#8607;</div>
+                <div class="prop-middle"><p>11</p></div>
+                <div class="prop-down">PROP IT &#8609;</div>
+            </div>
+            <div class="article-main">
+                <h2 class="arrows">C-SPAN ranks presidents: Abe still on top, new shocker at the bottom</h2>
+                <p class="under-headline">Posted by: <a href="tehranchik.htm">tehranchik</a> 6 hours 32 minutes ago in <a href=politics.htm>Politics</a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pellentesque nibh velit, non viverra augue fermentum at. Nulla semper sit amet mauris non luctus. Proin tempus dui eget orci bibendum pretium malesuada cursus nisi. Morbi feugiat augue nec eleifend cursus. Morbi id volutpat elit. Praesent consectetur rutrum mollis. Pellentesque eu eleifend orci. Sed pretium quam a rutrum fermentum. Donec eleifend viverra mi. Curabitur venenatis egestas augue at blandit. Ut id pharetra dolor. Ut ac venenatis massa. Aenean sed diam sit amet eros egestas dapibus in a ligula.</p>
+                <p class="article-footer">
+                    <a href="more.htm">More</a>
+                    <a href="discuss.htm" class="article-footer-border">Discuss</a> (0)
+                    <a href="more.htm" class="article-footer-border">Read full story atlatimesblogs.latimes.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="article">
+            <div class="propit">
+                <div class="prop-up">PROP IT &#8607;</div>
+                <div class="prop-middle"><p>8</p></div>
+                <div class="prop-down">PROP IT &#8609;</div>
+            </div>
+            <div class="article-main">
+                <h2>Obama makes history... Breaks US Debt Record In Just 30 Days
+                <p class="under-headline">Posted by: <a href="tehranchik.htm">tehranchik</a> 6 hours 32 minutes ago in <a href=politics.htm>Politics</a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pellentesque nibh velit, non viverra augue fermentum at. Nulla semper sit amet mauris non luctus. Proin tempus dui eget orci bibendum pretium malesuada cursus nisi. Morbi feugiat augue nec eleifend cursus. Morbi id volutpat elit. Praesent consectetur rutrum mollis. Pellentesque eu eleifend orci. Sed pretium quam a rutrum fermentum. Donec eleifend viverra mi. Curabitur venenatis egestas augue at blandit. Ut id pharetra dolor. Ut ac venenatis massa. Aenean sed diam sit amet eros egestas dapibus in a ligula.</p>
+                <p class="article-footer">
+                    <a href="more.htm">More</a>
+                    <a href="discuss.htm" class="article-footer-border">Discuss</a> (0)
+                    <a href="more.htm" class="article-footer-border">Read full story atlatimesblogs.latimes.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="article">
+            <div class="propit">
+                <div class="prop-up">PROP IT &#8607;</div>
+                <div class="prop-middle"><p>14</p></div>
+                <div class="prop-down">PROP IT &#8609;</div>
+            </div>
+            <div class="article-main">
+                <h2>C-SPAN ranks presidents: Abe still on top, new shocker at the bottom</h2>
+                <p class="under-headline">Posted by: <a href="tehranchik.htm">tehranchik</a> 6 hours 32 minutes ago in <a href=politics.htm>Politics</a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pellentesque nibh velit, non viverra augue fermentum at. Nulla semper sit amet mauris non luctus. Proin tempus dui eget orci bibendum pretium malesuada cursus nisi. Morbi feugiat augue nec eleifend cursus. Morbi id volutpat elit. Praesent consectetur rutrum mollis. Pellentesque eu eleifend orci. Sed pretium quam a rutrum fermentum. Donec eleifend viverra mi. Curabitur venenatis egestas augue at blandit. Ut id pharetra dolor. Ut ac venenatis massa. Aenean sed diam sit amet eros egestas dapibus in a ligula.</p>
+                <p class="article-footer">
+                    <a href="more.htm">More</a>
+                    <a href="discuss.htm" class="article-footer-border">Discuss</a> (0)
+                    <a href="more.htm" class="article-footer-border">Read full story atlatimesblogs.latimes.com</a>
+                </p>
+            </div>
+        </div>
+        <div class="article">
+            <div class="propit">
+                <div class="prop-up">PROP IT &#8607;</div>
+                <div class="prop-middle"><p>17</p></div>
+                <div class="prop-down">PROP IT &#8609;</div>
+            </div>
+            <div class="article-main">
+                <h2>C-SPAN ranks presidents: Abe still on top, new shocker at the bottom</h2>
+                <p class="under-headline">Posted by: <a href="tehranchik.htm">tehranchik</a> 6 hours 32 minutes ago in <a href=politics.htm>Politics</a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pellentesque nibh velit, non viverra augue fermentum at. Nulla semper sit amet mauris non luctus. Proin tempus dui eget orci bibendum pretium malesuada cursus nisi. Morbi feugiat augue nec eleifend cursus. Morbi id volutpat elit. Praesent consectetur rutrum mollis. Pellentesque eu eleifend orci. Sed pretium quam a rutrum fermentum. Donec eleifend viverra mi. Curabitur venenatis egestas augue at blandit. Ut id pharetra dolor. Ut ac venenatis massa. Aenean sed diam sit amet eros egestas dapibus in a ligula.</p>
+                <p class="article-footer">
+                    <a href="more.htm">More</a>
+                    <a href="discuss.htm" class="article-footer-border">Discuss</a> (0)
+                    <a href="more.htm" class="article-footer-border">Read full story atlatimesblogs.latimes.com</a>
+                </p>
+            </div>
+        </div>
     </main>
-    <footer>
-
-    </footer>
 </body>
 </html>
